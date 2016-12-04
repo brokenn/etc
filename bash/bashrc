@@ -1,0 +1,22 @@
+
+# Detect platform
+platform='unknown'
+unamestr=$(uname)
+if [[ "$unamestr" == 'Darwin' ]]; then
+  platform='osx'
+elif [[ "$unamestr" == 'Linux' ]]; then
+  platform='linux'
+fi
+
+
+# Colourful listings
+if [[ $platform == 'linux' ]]; then
+  alias ll='ls --color=auto -la'
+  alias ls='ls --color=auto'
+elif [[ $platform == 'osx' ]]; then
+  alias ll='ls -G -la'
+  alias ls='ls -G'
+fi
+
+
+
