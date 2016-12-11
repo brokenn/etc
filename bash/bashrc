@@ -19,6 +19,6 @@ elif [[ $platform == 'osx' ]]; then
 fi
 
 # VIM is run using config in repository
-alias vim='vim -u ~/etc/vim/vimrc
+alias vim='vim -u ~/etc/vim/vimrc'
 
 
