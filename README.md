@@ -1,2 +1,2 @@
 # etc
-Config for bash, thus, vim and other goodies
+Config for bash, thux, vim and other goodies
