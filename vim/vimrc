@@ -1,3 +1,6 @@
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Allow VIM config to be relocated from standard location
+
 " set default 'runtimepath' (without ~/.vim folders)
 let &runtimepath = printf('%s/vimfiles,%s,%s/vimfiles/after', $VIM, $VIMRUNTIME, $VIM)
 
@@ -6,16 +9,25 @@ let s:portable = expand('<sfile>:p:h')
 
 " add the directory to 'runtimepath'
 let &runtimepath = printf('%s,%s,%s/after', s:portable, &runtimepath, s:portable)
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" vim setup from http://fideloper.com/mac-vim-tmux 
 set nocompatible
 filetype off 
-
-set term=xterm-256color
-
 set rtp+=~/etc/vim/vundle
 call vundle#rc()
-
 Bundle 'gmarik/vundle'
-
 filetype plugin indent on 
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Add Solarized 
+Bundle 'altercation/vim-colors-solarized'
+set number        " Show line numbers
+syntax enable     " Use syntax highlighting
+set background=dark
+let g:solarized_termcolors = 256
+colorscheme solarized
+

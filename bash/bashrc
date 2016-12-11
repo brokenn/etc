@@ -21,4 +21,4 @@ fi
 # VIM is run using config in repository
 alias vim='vim -u ~/etc/vim/vimrc'
 
-
+TERM=xterm-256color
