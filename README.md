@@ -11,4 +11,10 @@ Steps:
  3. Install homebrew using ruby command at http://brew.sh
  4. Install tmux 
     $ brew install tmux
+ 5. Link tmux conf
+    $ ln -s ~/etc/tmux/tmux.conf ~/.tmux.conf
+
+Set Terminal preferences, Advanced, to report terminal as xterm-256color
+
+
 

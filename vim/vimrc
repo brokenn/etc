@@ -22,6 +22,10 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 filetype plugin indent on 
 
+" Set color to fix weird gray background things. 
+"set t_Co=256
+"set background=dark
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Add Solarized 
 Bundle 'altercation/vim-colors-solarized'
@@ -30,6 +34,7 @@ syntax enable     " Use syntax highlighting
 set background=dark
 let g:solarized_termcolors = 256
 colorscheme solarized
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Make backspace do the normal thing. Needed on OSX, maybe 
