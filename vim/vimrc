@@ -31,3 +31,8 @@ set background=dark
 let g:solarized_termcolors = 256
 colorscheme solarized
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Make backspace do the normal thing. Needed on OSX, maybe 
+" not on Linux?
+set backspace=start,eol,indent
+
