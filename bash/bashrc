@@ -9,6 +9,10 @@ elif [[ "$unamestr" == 'Linux' ]]; then
 fi
 
 
+# Prompt
+export PS1="\033]0;\w\007\n\[\e[0;32m\]\w \$\[\e[0;00m\] "
+
+
 # Colourful listings
 if [[ $platform == 'linux' ]]; then
   alias ll='ls --color=auto -la'
@@ -20,3 +24,6 @@ fi
 
 # VIM is run using config in repository
 alias vim='vim -u ~/etc/vim/vimrc'
+
+# Git alias
+alias gs='git status'
